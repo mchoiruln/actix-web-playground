@@ -27,6 +27,4 @@ FROM rust:1.57-slim-buster
 COPY --from=build /app/target/release/app .
 
 # set the startup command to run your binary
-EXPOSE 8080
-
 CMD ["./app"]
